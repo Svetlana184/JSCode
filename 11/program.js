@@ -138,32 +138,37 @@
 
 
 //1
-let user = {
-    name: "John",
-    years: 30
-};
-let {name: nameUser, years:age, IsAdmin = false} = user;
-alert(nameUser);
-alert(age)
-alert(IsAdmin)
+// let user = {
+//     name: "John",
+//     years: 30
+// };
+// let {name: nameUser, years:age, IsAdmin = false} = user;
+// alert(nameUser);
+// alert(age)
+// alert(IsAdmin)
+//
+//
+//
+// //2
+// let salaries = {
+//     "John":100,
+//     "Pete":300,
+//     "Mary":250
+// }
+// let maxSalary=0;
+// let emp = "";
+// for (let s of Object.entries(salaries)){
+//     topSalary(s)
+// }
+// function topSalary([name, salary]){
+//     if(maxSalary<salary){
+//         maxSalary=salary;
+//         emp = name;
+//     } 
+// }
+// alert("Самый высокооплачиваемый сотрудник - " + emp);
 
-
-
-//2
-let salaries = {
-    "John":100,
-    "Pete":300,
-    "Mary":250
-}
-let maxSalary=0;
-let emp = "";
-for (let s of Object.entries(salaries)){
-    topSalary(s)
-}
-function topSalary([name, salary]){
-    if(maxSalary<salary){
-        maxSalary=salary;
-        emp = name;
-    } 
-}
-alert("Самый высокооплачиваемый сотрудник - " + emp);
+let id1 = document.getElementById("green");
+id1.style.background = "green";
+let id2 = document.getElementById("blue");
+id2.style.background = "blue";
