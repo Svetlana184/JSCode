@@ -168,7 +168,23 @@
 // }
 // alert("Самый высокооплачиваемый сотрудник - " + emp);
 
-let id1 = document.getElementById("green");
-id1.style.background = "green";
-let id2 = document.getElementById("blue");
-id2.style.background = "blue";
+// let id1 = document.getElementById("green");
+// id1.style.background = "green";
+// let id2 = document.getElementById("blue");
+// id2.style.background = "blue";
+
+//Task 1
+// alert(document.body.firstElementChild) //получаем div
+// alert(document.body.firstElementChild.nextElementSibling )//получаем ul
+// alert(document.body.firstElementChild.nextElementSibling.lastElementChild)
+
+//Task2
+
+let table = document.getElementById("table");
+for (let row of table.rows){
+    for(let cell of row.cells){
+        if(cell.cellIndex == row.sectionRowIndex){
+            cell.style.background = "red"
+        }
+    }
+}
